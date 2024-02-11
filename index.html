@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logs Parsing Website</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row" id="logEntry">
+        <div class="alert alert-primary m-2 flex-fill col-md-3">
+            <label>
+                Message
+                <textarea id="messSage" class="form-control" rows="3" readonly></textarea>
+            </label>
+            <h3>Log Level: <b id="logLevel">INFO</b></h3>
+        </div>
+        <div class="col-md-3 alert alert-light m-2 flex-fill">
+            <div><b>Time:</b> <span id="time">Place for time</span></div>
+            <div><b>Name:</b> <span id="function">Function name</span></div>
+            <div><b>Module:</b> <span id="module">Module name</span></div>
+            <div><b>Line:</b> <span id="line">Place for line number</span></div>
+        </div>
+        <div class="col-md-3 alert alert-light m-2 flex-fill">
+            <div><b>Name:</b> <span id="name">Place for name</span></div>
+            <div><b>Elapsed:</b> <span id="elapsed">Place for elapsed time</span></div>
+            <div><b>File:</b> <span id="file">Place for file name</span></div>
+        </div>
+    </div>
+</body>
+<script src="js/bootstrap.js"></script>
+</html>
